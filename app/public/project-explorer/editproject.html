@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel= "stylesheet" href="css/bootstrap.min.css">
+        </head>
+        <body>
+            <div class="container">
+                <nav class="navbar navbar-light bg-primary">
+                <a class="navbar-brand text-white" href="search.html">Project Explorer</a>
+                
+                <form class="form-inline" name="searchForm">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search Projects" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">Search</button>
+                         <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+            <a class="navbar-brand text-white" href="register.html">Sign Up</a>
+        </li>
+        <li class="nav-item">
+            <a class="navbar-brand text-white" href="login.html">Login</a>
+            </li>
+            </ul>
+            </nav>
+        </div>
+        <br><main>
+            <div class="container">
+                <h3>Project 1</h3>
+             <div class="container p-3 my-3 bg-light text-dark">
+                 <div class="row">
+                     <div class="col">
+                         Created By
+                     </div>
+                     <div class="col">
+                         Date Created
+                     </div> 
+                     <div class="col">
+                        Last Updated
+                     </div>
+                     <div class="d-flex justify-content-end">
+                     <div class="col">
+                        <button type="submit" class="btn btn-primary">View Project</button>
+                        </div>
+                  </div>
+                 </div>
+                </div>
+
+                <div class="row">
+               <div class="col">
+                <h5>Edit Project</h5>
+                <hr>
+                <div class="form-row">
+                    <div class="form-group col-md-12">
+            <label for="projectName">Project Name:</label>
+               <input type="text" class="form-control" id="projectName" placeholder="Project 1"/>
+                </div>
+                </div>
+                <div class="form-row">
+                    <div class="col-md-12">
+            <label for="projectAbstract">Project Abstract:</label>
+            <textarea class="form-control" id="projectAbstract" placeholder="Project 1 is very important" rows="7"></textarea>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-12">
+        <label for="authors">Author(s)</label>
+           <input type="text" class="form-control" id="authors" placeholder="Ade Chris"/>
+            </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-12">
+        <label for="tags">Tag(s):</label>
+           <input type="text" class="form-control" id="tags" placeholder="#web"/>
+            </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Save</button>
+        </div>
+               <div class="col">
+                <h5>Manage Project Files</h5>
+               <hr>
+                    <div class="custom-file">
+                      <input type="file" class="custom-file-input" id="customFile">
+                      <label class="custom-file-label" for="customFile">click to open file browser</label>
+                    </div>
+                    <br><br>
+                    <div class= "card" style="width: 34rem;">
+                        <div class="card-header">Project Files</div>
+                        <div class="card-body text-center">
+                        <p class="card-text">No file uploaded yet</p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </main><br>
+        <footer>
+            <div class="card bg-light text-dark">
+            <div class="d-flex flex-row-reverse">
+                <p>Project Explorer 2020 ©.<strong>Edconnect</strong></p>
+            </div>
+            </div>
+        </footer>
+           </body>
+</html>
