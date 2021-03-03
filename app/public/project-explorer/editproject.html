@@ -4,21 +4,25 @@
         <link rel= "stylesheet" href="css/bootstrap.min.css">
         </head>
         <body>
-            <div class="container">
-                <nav class="navbar navbar-light bg-primary">
+            <div>
+                <nav class="navbar navbar-dark navbar-expand bg-primary">
                 <a class="navbar-brand text-white" href="search.html">Project Explorer</a>
                 
                 <form class="form-inline" name="searchForm">
                     <input class="form-control mr-sm-2" type="search" placeholder="Search Projects" aria-label="Search">
                     <button class="btn btn-outline-light" type="submit">Search</button>
-                         <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
+                </form>
+                <div class="mr-auto navbar-nav">
+                    <a href="createproject.html" class="nav-link">
+                      Submit
+                    </a>
+                  </div>
             <ul class="nav justify-content-end">
                 <li class="nav-item">
-            <a class="navbar-brand text-white" href="register.html">Sign Up</a>
+            <a class="nav-link text-white" href="register.html">Sign Up</a>
         </li>
         <li class="nav-item">
-            <a class="navbar-brand text-white" href="login.html">Login</a>
+            <a class="nav-link text-white" href="login.html">Login</a>
             </li>
             </ul>
             </nav>
@@ -28,67 +32,76 @@
                 <h3>Project 1</h3>
              <div class="container p-3 my-3 bg-light text-dark">
                  <div class="row">
-                     <div class="col">
+                     <div class="col-4">
                          Created By
                      </div>
-                     <div class="col">
+                     <div class="col-2">
                          Date Created
                      </div> 
-                     <div class="col">
+                     <div class="col-2">
                         Last Updated
                      </div>
-                     <div class="d-flex justify-content-end">
-                     <div class="col">
-                        <button type="submit" class="btn btn-primary">View Project</button>
-                        </div>
+                     <div class="col-4">
+                        <div class="d-flex justify-content-end">
+                           <button type="submit" class="btn btn-primary">View Project</button>
+                       </div>
+                   </div>
                     </div>
-                 </div>
+                    <div class="row">
+                       <div class="col">
+                           Ade Chris
+                       </div>
+                       <div class="col">
+                           10/2020
+                       </div>
+                       <div class="col">
+                           02/2021
+                       </div>
+             </div>
                 </div>
-
-                <div class="row">
-               <div class="col">
+                
+               <div class="row">
+                <div class="col">
                 <h5>Edit Project</h5>
                 <hr>
-                <div class="form-row">
-                    <div class="form-group col-md-12">
-            <label for="name">Project Name:</label>
-               <input type="text" class="form-control"  name="name" placeholder="Project 1"/>
+               
+                <form>
+                    <div class="form-group">
+                      <label for="name">:Project 1</label>
+                      <input type="text" class="form-control" name="name" placeholder="project name">
+                    </div>
+                   
+                        <div class="form-group">
+                            <label for="abstract">Project Abstract</label>
+                            <textarea class="form-control" name="abstract" placeholder="Project 1 is a very interesting project" rows="5"></textarea>
+                          </div>
+                   
+                       <div class="form-group">
+                      <label for="authors">Author(s)</label>
+                      <input type="text" class="form-control" name="authors" placeholder="Ade Chris">
+                    </div>
+                        <div class="form-group">
+                      <label for="tags">Tag(s)</label>
+                      <input type="text" class="form-control" name="tags" placeholder="#web">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Save</button>
+                </form>
                 </div>
-                </div>
-                <div class="form-row">
-                    <div class="col-md-12">
-            <label for="abstract">Project Abstract:</label>
-            <textarea class="form-control" name="abstract" placeholder="Project 1 is very important" rows="7"></textarea>
-                </div>
-                </div>
-                <div class="form-row">
-                <div class="form-group col-md-12">
-        <label for="authors">Author(s)</label>
-           <input type="text" class="form-control" name="authors" placeholder="Ade Chris"/>
-            </div>
-            </div>
-            <div class="form-row">
-                <div class="form-group col-md-12">
-        <label for="tags">Tag(s):</label>
-           <input type="text" class="form-control" name="tags" placeholder="#web"/>
-            </div>
-            </div>
-            <button type="submit" class="btn btn-primary">Save</button>
-        </div>
-               <div class="col">
+                <div class="col">
                 <h5>Manage Project Files</h5>
                <hr>
-               <div class="card">
-                    <input type="file" class="custom-file-input" name="name">
-                <label class="custom-file-label" for="customFile">click to open file browser</label>
-              </div>
-                    <br><br>
+                    <div class="custom-file">
+                        <input type="file" class="custom-file-input" name="inputfile" aria-describedby="inputGroupFileAddon01">
+                        <label class="custom-file-label" for="inputfile">Choose file</label>
+                      </div>
+                     <br><br>
                     <div class= "card">
                         <div class="card-header">Project Files</div>
                         <div class="card-body text-center">
                         <p class="card-text">No file uploaded yet</p>
                         </div>
                     </div>
+                </div>
                 </div>
                 </div>
             </div>
