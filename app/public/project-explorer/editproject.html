@@ -43,7 +43,7 @@
                      </div>
                      <div class="col-4">
                         <div class="d-flex justify-content-end">
-                           <button type="submit"  href="viewproject.html" class="btn btn-primary">View Project</button>
+                            <a class="btn btn-primary" href="viewproject.html" role="button">View Project</a>
                        </div>
                    </div>
                     </div>
@@ -66,23 +66,24 @@
                 <hr>
                
                 <form>
-                    <div class="form-group">
-                      <label for="name">:Project 1</label>
-                      <input type="text" class="form-control" name="name" placeholder="project name">
+                    <div class="form-row">
+                        <div class="form-group col-md-12">
+                      <label for="name">Project Name</label>
+                      <input type="text" class="form-control" name="name" placeholder="project 1">
                     </div>
-                   
-                        <div class="form-group">
+                        <div class="form-group col-md-12">
                             <label for="abstract">Project Abstract</label>
                             <textarea class="form-control" name="abstract" placeholder="Project 1 is a very interesting project" rows="5"></textarea>
                           </div>
-                   
-                       <div class="form-group">
+                          
+                            <div class="form-group col-md-12">
                       <label for="authors">Author(s)</label>
                       <input type="text" class="form-control" name="authors" placeholder="Ade Chris">
                     </div>
-                        <div class="form-group">
+                        <div class="form-group col-md-12">
                       <label for="tags">Tag(s)</label>
                       <input type="text" class="form-control" name="tags" placeholder="#web">
+                    </div>
                     </div>
                     <button type="submit" class="btn btn-primary">Save</button>
                 </form>
@@ -90,16 +91,22 @@
                 <div class="col">
                 <h5>Manage Project Files</h5>
                <hr>
+               <div class="form-row">
+                <div class="form-group col-md-12">
                     <div class="custom-file">
                         <input type="file" class="custom-file-input" name="inputfile" aria-describedby="inputGroupFileAddon01">
                         <label class="custom-file-label" for="inputfile">Choose file</label>
                       </div>
-                     <br><br>
+                      </div>
+                    
+                        <div class="form-group col-md-12">
                     <div class= "card">
                         <div class="card-header">Project Files</div>
                         <div class="card-body text-center">
                         <p class="card-text">No file uploaded yet</p>
                         </div>
+                    </div>
+                    </div>
                     </div>
                 </div>
                 </div>
